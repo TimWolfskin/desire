@@ -20,6 +20,11 @@ $(function () {
         arrows: false,
     });
 
+    $('.article-slider__box').slick({
+        prevArrow: '<button type="button" class="article-slider__arrow article-slider__arrowleft"><img src="images/arrow-prev.svg" alt=""></button>',
+        nextArrow: '<button type="button" class="article-slider__arrow article-slider__arrowright"><img src="images/arrow-next.svg" alt=""></button>'
+    });
+
     var mixer = mixitup('.gallery__inner', {
         load: {
             filter: '.living'
